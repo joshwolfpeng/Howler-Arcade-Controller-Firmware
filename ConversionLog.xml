@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLog.xslt'?>
+<conversion conversiontitle="Upgrade Report - Atmel Software Framework Upgrade Log" subtitle1="Upgrading Modules From" subtitle2="to" date="Wednesday, January 08, 2014" time="9:13 PM">
+  <general>
+    <log timestamp="01-08-2014 21-13-47">
+      <message>Unloading project</message>
+    </log>
+    <log timestamp="01-08-2014 21-13-47">
+      <message>Project unload complete.</message>
+    </log>
+    <log timestamp="01-08-2014 21-14-20">
+      <message>Backing up of project started.</message>
+    </log>
+    <log timestamp="01-08-2014 21-14-20">
+      <message>Project backup completed.</message>
+    </log>
+    <log timestamp="01-08-2014 21-14-20">
+      <message>Reloading project after backup.</message>
+    </log>
+    <log timestamp="01-08-2014 21-14-22">
+      <message>Project reload complete.</message>
+    </log>
+    <log timestamp="01-08-2014 21-14-22">
+      <message>Upgrading of project started.</message>
+    </log>
+    <log timestamp="01-08-2014 21-15-13">
+      <message>Project upgrade complete</message>
+    </log>
+  </general>
+  <revert versiontext="3.6.0" description="Reverting from version">
+    <moduleinfo name="Generic board support">
+      <action description="Delete framework file 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/boards' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Memory Control Access Interface">
+      <action description="Delete framework file 'src\ASF\common\services\storage\ctrl_access\ctrl_access.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\storage\ctrl_access\ctrl_access.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_access.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/storage/ctrl_access' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Delete framework file 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CPU specific features">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\cpu\ccp.s'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\cpu\xmega_reset_cause.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\cpu\ccp.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/cpu' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - Input/Output Port Controller">
+      <action description="Remove defined symbol 'IOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+      <action description="Remove Assembler Flag '-DIOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="NVM - Non Volatile Memory">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\nvm\nvm.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\nvm\nvm_asm.s'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\nvm\nvm.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/nvm' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="PMIC - Programmable Multi-level Interrupt Controller">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\pmic\pmic.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/pmic' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep Controller driver">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\sleep\sleep.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/sleep' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="System Clock Control - XMEGA A1U/A3U/A3BU/A4U/B/C implementation">
+      <action description="Delete framework file 'src\ASF\common\services\clock\xmega\sysclk.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\genclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\xmega\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\xmega\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\xmega\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\clock\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_clock.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/clock' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GPIO - General purpose Input/Output">
+      <action description="Delete framework file 'src\ASF\common\services\gpio\gpio.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\gpio\xmega_gpio\xmega_gpio.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/gpio' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - General purpose I/O service">
+      <action description="Delete framework file 'src\ASF\common\services\ioport\xmega\ioport_compat.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\ioport\xmega\ioport_compat.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\ioport\xmega\ioport.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\ioport\ioport.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/ioport' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep manager - XMEGA A/AU/B/D implementation">
+      <action description="Delete framework file 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\sleepmgr\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/sleepmgr' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB protocol definition">
+      <action description="Delete framework file 'src\ASF\common\services\usb\usb_atmel.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\usb_protocol.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Composite Device">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\composite\device\udi_composite_desc.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\composite\device\udi_composite_conf.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_usb.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/composite/device' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB HID Device protocol">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\usb_protocol_hid.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/hid' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB HID Library (Device)">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\udi_hid.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\udi_hid.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/hid/device' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device HID Generic (Composite Device)">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\generic\udi_hid_generic.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\generic\udi_hid_generic.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/hid/device/generic' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device HID Keyboard (Composite Device)">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\kbd\udi_hid_kbd.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\kbd\udi_hid_kbd.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/hid/device/kbd' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device HID Mouse (Composite Device)">
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\mouse\udi_hid_mouse.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\class\hid\device\mouse\udi_hid_mouse.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/class/hid/device/mouse' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device Stack Core (Common API)">
+      <action description="Delete framework file 'src\ASF\common\services\usb\udc\udc.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\udc\udc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\udc\udd.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\udc\udc_desc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\services\usb\udc\udi.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/services/usb/udc' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - XMEGA implementation">
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Delete framework file 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="ADC - XMEGA A/AU Implementation">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\adc\xmega_aau\adc_aau.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\adc\adc.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\adc\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/adc' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TWI - Two-wire Master Interface">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\twi\twim.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\twi\twim.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\twi\twi_common.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\Config\conf_twim.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/twi' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB - Universal Serial Bus Interface (with sleepmgr)">
+      <action description="Delete framework file 'src\ASF\xmega\drivers\usb\usb_device.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\drivers\usb\usb_device.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/drivers/usb' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="XMEGA compiler driver">
+      <action description="Delete framework file 'src\ASF\xmega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\bit_handling\clz_ctz.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/utils/preprocessor' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </revert>
+  <update versiontext="3.14.0" description="Upgrading to version">
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Memory Control Access Interface">
+      <action description="Import framework file as 'src\ASF\common\services\storage\ctrl_access\ctrl_access.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\storage\ctrl_access\ctrl_access.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_access.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Import framework file as 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CPU specific features">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\ccp.s'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\xmega_reset_cause.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\ccp.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - Input/Output Port Controller">
+      <action description="Define symbol 'IOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DIOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="NVM - Non Volatile Memory">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm_asm.s'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="PMIC - Programmable Multi-level Interrupt Controller">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\pmic\pmic.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep Controller driver">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\sleep\sleep.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="System Clock Control - XMEGA A1U/A3U/A3BU/A4U/B/C implementation">
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\sysclk.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\genclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_clock.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GPIO - General purpose Input/Output">
+      <action description="Import framework file as 'src\ASF\common\services\gpio\gpio.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gpio\xmega_gpio\xmega_gpio.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - General purpose I/O service">
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport_compat.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport_compat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\ioport.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep manager - XMEGA A/AU/B/D implementation">
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_sleepmgr.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB protocol definition">
+      <action description="Import framework file as 'src\ASF\common\services\usb\usb_atmel.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\usb_protocol.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB CDC Protocol">
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\usb_protocol_cdc.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/services/usb/class/cdc' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device CDC (Single Interface Device)">
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc_desc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'atmel_devices_cdc.cat'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'atmel_devices_cdc.inf'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc_conf.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_usb.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/services/usb/class/cdc/device' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device Stack Core (Common API)">
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udd.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc_desc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udi.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - XMEGA implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="ADC - XMEGA A/AU Implementation">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\adc\xmega_aau\adc_aau.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\adc\adc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\adc\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_adc.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TWI - Two-wire Master and Slave Interface">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\twi\twim.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\twi\twis.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\twi\twim.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\twi\twis.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\twi\twi_common.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_twim.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB - Universal Serial Bus Interface (with sleepmgr)">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\usb\usb_device.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\usb\usb_device.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="XMEGA compiler driver">
+      <action description="Import framework file as 'src\ASF\xmega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\bit_handling\clz_ctz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+</conversion>
